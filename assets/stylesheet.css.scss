@@ -1,0 +1,160 @@
+/* RESET */
+
+html, body, div, ul, li, h1, h2, img, button, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  background: transparent;
+}
+
+html {
+  background: #ffffdf;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  min-width: 600px;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+button {
+  padding: 5px;
+  background: #faf;
+  font-size: 14px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+/* CLEARFIX */
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* TOP BAR */
+.top-bar {
+  position: relative;
+  background: #710101;
+  height: 46px;
+  color: #fff;
+  border-bottom: 5px solid #fff;
+}
+
+.top-bar:after {
+  content: "";
+  padding-top: 5px;
+  border-bottom: 1px solid #17c1bd;
+}
+
+.top-bar > .links {
+  float: right;
+  margin: 5px;
+}
+
+.links > li {
+  float: left;
+  padding: 11px 15px 8px 15px;
+  font: 18px;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+.links > li:hover {
+  color: #17c1bd;
+}
+
+.links > li:active {
+  color: #ccc;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: calc(16.5%);
+  width: 72px;
+  height: 72px;
+  border-radius: 72px;
+  background: #fff;
+  float: left;
+  border: 1px solid #17c1bd;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.logo > img {
+  margin: 4px auto;
+}
+
+/* *MAIN PAGE* */
+/* BANNER */
+
+.banner {
+  display: block;
+  height: 450px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  top: 225px;
+}
+
+.container > img {
+  position: relative;
+  top: -225px;
+  width: 100%;
+}
+
+/* MAIN */
+
+.wait-for-cat .window {
+  margin: 50px auto;
+  width: 200px;
+  border: 10px solid black;
+  overflow: hidden;
+}
+
+.wait-for-cat ul {
+  width: 1000px;
+  transition: margin-left 1s;
+}
+
+.wait-for-cat .active ul {
+  margin-left: -800px;
+}
+
+.wait-for-cat li {
+  float: left;
+  width: 200px;
+  padding: 20px 0;
+  background: orange;
+}
+
+.wait-for-cat .window li:nth-child(odd) {
+  background: yellow;
+}
+
+.wait-for-cat .window.active-cat li:last-child {
+  background: blue;
+  color: white;
+}
