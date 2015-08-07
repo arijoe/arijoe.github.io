@@ -1,6 +1,6 @@
 /* RESET */
 
-html, body, div, ul, li, h1, h2, img, button, a {
+html, body, div, ul, li, h1, h2, figure, img, button, a {
   margin: 0;
   padding: 0;
   border: 0;
@@ -88,7 +88,7 @@ button {
 
 .logo {
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: calc(16.5%);
   width: 72px;
   height: 72px;
@@ -101,10 +101,35 @@ button {
 }
 
 .logo > img {
-  margin: 4px auto;
+  margin-top: 4px;
+  margin-left: 0.37px;
 }
 
 /* *MAIN PAGE* */
+.content {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.content > div {
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.content > .main {
+  width: calc(80%);
+}
+
+.content > .sidebar {
+  width: calc(20%);
+}
+
+.sidebar {
+  background: red;
+}
+
 /* BANNER */
 
 .banner {
@@ -124,6 +149,9 @@ button {
   top: -225px;
   width: 100%;
 }
+
+/* SIDEBAR */
+
 
 /* MAIN */
 

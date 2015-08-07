@@ -21,6 +21,30 @@
 
 })();
 
+(function () {
+
+  $.slideBar = function (el) {
+    this.$el = $(el);
+    this.initialize();
+  };
+
+  $.slideBar.prototype.initialize = function () {
+    $(".logo").on("click", this.aboutMe.bind(this));
+  };
+
+  $.slideBar.prototype.aboutMe = function () {
+    this.$el.toggleClass("active");
+  };
+
+  $.fn.sideBar = function () {
+    new $.slideBar(this);
+  };
+})();
+
 $(document).on("ready", function(){
   $(".wait-for-cat").waitCatify();
 });
+
+$(document).on("ready", function () {
+  $(".content").sideBar();
+})
