@@ -89,7 +89,7 @@ button {
 .logo {
   position: absolute;
   top: 10px;
-  left: calc(16.5%);
+  left: calc(20% - 36px);
   width: 72px;
   height: 72px;
   border-radius: 72px;
@@ -116,18 +116,24 @@ button {
   float: left;
   display: inline-block;
   vertical-align: top;
+  transition: width .5s;
 }
 
-.content > .main {
-  width: calc(80%);
-}
-
-.content > .sidebar {
-  width: calc(20%);
+.main {
+  width: calc(100%);
 }
 
 .sidebar {
-  background: red;
+  width: 0;
+}
+
+.main.active {
+  width: calc(80%);
+}
+
+.sidebar.active {
+  width: calc(20%);
+  border-right: 1px solid #17c1bd;
 }
 
 /* BANNER */

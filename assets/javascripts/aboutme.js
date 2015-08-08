@@ -33,7 +33,9 @@
   };
 
   $.slideBar.prototype.aboutMe = function () {
-    this.$el.toggleClass("active");
+    $(".main").toggleClass("active");
+    $(".sidebar").toggleClass("active");
+    console.log($(".main"));
   };
 
   $.fn.sideBar = function () {
