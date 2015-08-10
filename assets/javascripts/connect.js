@@ -8,13 +8,12 @@
   $.slideBar.prototype.initialize = function () {
     $(".logo").on("click", this.connect.bind(this));
     $("#connect").on("click", this.connect.bind(this));
+    $(".sidebar").find(".avatar").on("click", this.connect.bind(this));
   };
 
   $.slideBar.prototype.connect = function () {
     $(".main").toggleClass("active");
     $(".sidebar").toggleClass("active");
-
-    // this.$el.css("width");
   };
 
   $.fn.sideBar = function () {

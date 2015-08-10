@@ -1,7 +1,7 @@
 /* RESET */
 
 html, body, div, ul, li, h1, h2, h4, h5,
-figure, img, button, a, footer {
+figure, img, button, a, footer, br {
   margin: 0;
   padding: 0;
   border: 0;
@@ -271,35 +271,43 @@ h5 {
 /* ABOUT ME */
 
 .words {
-  float: left;
   margin-right: 30px;
-  width: calc(85% - 50px);
 }
 
-.words > p > span {
+.words > p {
   display: block;
-  margin-top: 12px;
+  margin-top: calc(2.5%);
   color: rgba(52, 52, 55, 1);
+  text-align: justify;
+}
+
+br {
+  display: block;
+  height: 16px;
+}
+
+br:after {
+  content: "";
 }
 
 .info {
   position: relative;
 }
 
-.info > .avatar {
-  width: calc(15%);
-  margin: 0 0 25px 0;
+.words > .avatar {
+  width: calc(20%);
   float: right;
+  margin: 0 0 10px 30px;
+  border: 1px solid #17c1bd;
+  box-shadow: 10px black;
 }
 
-.info > .avatar > .container {
-  align-content: center;
-}
-.info > .avatar > .container > img {
+.words > .avatar > .container >  img {
+  position: relative;
   width: 215%;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 10px;
+  top: -30px;
 }
 
 /* FOOTER */
@@ -308,12 +316,13 @@ footer {
   border-top: 1px solid #17c1bd;
   display: block;
   position: relative;
-  background: rgba(52, 52, 55, 1);
+  background: #fff;
+  color: rgba(52, 52, 55, 1);
 }
 
 footer > span {
   margin-top: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-style: italic;
 }
 
