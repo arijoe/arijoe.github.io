@@ -1,6 +1,7 @@
 /* RESET */
 
-html, body, div, ul, li, h1, h2, h4, figure, img, button, a {
+html, body, div, ul, li, h1, h2, h4, h5,
+figure, img, button, a, footer {
   margin: 0;
   padding: 0;
   border: 0;
@@ -15,13 +16,13 @@ html, body, div, ul, li, h1, h2, h4, figure, img, button, a {
 }
 
 html {
-  background: #ffffdf;
+  background: #ffffef;
 }
 
 body {
   margin: 0;
   font-family: sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 200;
   min-width: 780px;
 }
@@ -83,6 +84,10 @@ button {
   letter-spacing: 5px;
 }
 
+.links > li:last-child {
+  color: #ffffdf;
+}
+
 .links > li:hover {
   color: #17c1bd;
 }
@@ -130,9 +135,10 @@ button {
 }
 
 .sidebar {
-  z-index: -1;
   width: 0;
+  display: hidden;
   background: rgba(52, 52, 55, 1);
+  overflow: hidden;
 }
 
 .main.active {
@@ -152,6 +158,7 @@ button {
   height: 400px;
   overflow: hidden;
   text-align: center;
+  border-bottom: 5px solid #fff;
 }
 
 .banner-text {
@@ -183,13 +190,143 @@ button {
 /* SIDEBAR */
 
 .avatar {
-  width: calc(76%);
-  height: auto;
+  width: calc(80%);
+  position: relative;
   margin-top: 45px;
-  margin-left: calc(12%);
+  margin-left: calc(10%);
   border-radius: 5px;
   border: 1px solid #555;
   overflow: hidden;
 }
 
+.avatar > .dummy {
+  padding-top: 100%;
+}
+
+.avatar > .container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.container > img {
+  width: 100%;
+  position: relative;
+  top: -20px;
+}
+
+.description {
+  color: #ffffdf;
+}
+
+.description > h4 {
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 2.5px;
+  margin-top: 15px;
+}
+
+.description > p {
+  font-weight: 100;
+  text-align: justify;
+  font-size: 18px;
+  margin: calc(10%);
+  color: #111;
+}
+
 /* MAIN */
+
+.main > div {
+  display: block;
+  position: relative;
+  border-bottom: 5px solid #fff;
+  border-top: 1px solid #17c1bd;
+}
+
+.main > div:after {
+  content: "";
+  border-top: 1px solid #17c1bd;
+  padding-top: 5px;
+  background: #fff;
+  border-bottom: 1px solid #710101;
+  display: block;
+}
+
+.main > div:nth-child(odd) {
+  background: #fffffa;
+}
+
+h5 {
+  font-size: 32px;
+  font-family: monospace;
+  color: #710101;
+}
+
+.main > div > .info {
+  margin: 25px 30px;
+}
+
+/* ABOUT ME */
+
+.words {
+  float: left;
+  margin-right: 30px;
+  width: calc(85% - 50px);
+}
+
+.words > p > span {
+  display: block;
+  margin-top: 12px;
+  color: rgba(52, 52, 55, 1);
+}
+
+.info {
+  position: relative;
+}
+
+.info > .avatar {
+  width: calc(15%);
+  margin: 0 0 25px 0;
+  float: right;
+}
+
+.info > .avatar > .container {
+  align-content: center;
+}
+.info > .avatar > .container > img {
+  width: 215%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+}
+
+/* FOOTER */
+
+footer {
+  border-top: 1px solid #17c1bd;
+  display: block;
+  position: relative;
+  background: rgba(52, 52, 55, 1);
+}
+
+footer > span {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-style: italic;
+}
+
+#photo-credit {
+  text-align: left;
+  margin-left: 10px;
+  float: left;
+  width: 20%;
+}
+
+#ip {
+  text-align: right;
+  margin-right: 10px;
+  float: right;
+  width: 70%;
+}

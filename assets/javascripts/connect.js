@@ -6,11 +6,11 @@
   };
 
   $.slideBar.prototype.initialize = function () {
-    $(".logo").on("click", this.aboutMe.bind(this));
-    $("#aboutme").on("click", this.aboutMe.bind(this));
+    $(".logo").on("click", this.connect.bind(this));
+    $("#connect").on("click", this.connect.bind(this));
   };
 
-  $.slideBar.prototype.aboutMe = function () {
+  $.slideBar.prototype.connect = function () {
     $(".main").toggleClass("active");
     $(".sidebar").toggleClass("active");
 
