@@ -66,27 +66,35 @@ button {
 /* TOP BAR */
 .top-bar {
   display: block;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 780px;
+  width: 100%;
   background: #710101;
-  height: 46px;
+  height: 39px;
   color: #fff;
-  border-bottom: 5px solid #fff;
+  border-bottom: 1px solid #17c1bd;
 }
 
 .top-bar:after {
   content: "";
-  padding-top: 5px;
+  display: block;
+  background: #fff;
+  padding-top: 6px;
   border-bottom: 1px solid #17c1bd;
 }
 
 .top-bar > .links {
   float: right;
   margin: 5px;
+  padding-top: 7px;
+  padding-bottom: 4px;
 }
 
 .links > li {
   float: left;
-  padding: 11px 15px 8px 15px;
+  padding: 0 15px;
   font: 18px;
   font-weight: 200;
   letter-spacing: 5px;
@@ -129,7 +137,10 @@ button {
 }
 
 /* *MAIN PAGE* */
+
 .content {
+  margin-top: 45px;
+  z-index: -1;
   width: 100%;
   position: relative;
   display: flex;
@@ -269,7 +280,7 @@ button {
 }
 
 .main > div:nth-child(odd) {
-  background: #fffffa;
+  background: #fff;
 }
 
 h5 {
@@ -371,7 +382,7 @@ h5 {
 
 /* FOOTER */
 
-footer {
+.footer {
   border-top: 1px solid #17c1bd;
   display: block;
   position: relative;
@@ -379,7 +390,7 @@ footer {
   color: #555;
 }
 
-footer > span {
+.footer > span {
   margin-top: 60px;
   margin-bottom: 30px;
   font-style: italic;
