@@ -188,7 +188,7 @@ button {
 
 .banner-text {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   top: calc(50% - 42px);
   left: calc(50% - 244px);
   color: rgba(255, 255, 223, 0.68);
@@ -224,11 +224,11 @@ button {
   overflow: hidden;
 }
 
-.avatar > .dummy {
+.dummy {
   padding-top: 100%;
 }
 
-.avatar > .container {
+.container {
   position: absolute;
   top: 0;
   right: 0;
@@ -312,7 +312,6 @@ h5 {
   float: right;
   margin: 0 0 10px 30px;
   border: 1px solid #17c1bd;
-  box-shadow: 10px black;
 }
 
 .info > .avatar > .container >  img {
@@ -376,24 +375,44 @@ h5 {
   margin: 20px 0;
 }
 
+.project {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.project > div {
+  display: inline-block;
+  position: relative;
+}
+
+.project-image {
+  width: 33%;
+  position: relative;
+}
+
+.dummy_two {
+padding-top: 70%;
+}
+
+.project-description {
+  width: 62%;
+  margin-left: 15px;
+}
+
 .bullet {
   color: rgba(52, 52, 55, 1);
 }
 
-.project-image {
-  width: 300px;
-}
+/* HOVER-EFFECT */
 
 .hovereffect {
   width: 100%;
-  height: 100%;
-  float: left;
   overflow: hidden;
-  position: relative;
   text-align: center;
   cursor: default;
+  border: 2px solid #ccc;
+  outline: 1px solid #17c1bd;
 }
-
 
 .hovereffect .overlay {
   position: absolute;
@@ -424,6 +443,8 @@ h5 {
   position: relative;
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
+  top: 0px;
+  height: 100%;
 }
 
 .hovereffect:hover img {
