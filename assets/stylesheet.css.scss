@@ -315,7 +315,11 @@ h5 {
 
 .skills > .info > p {
   margin-bottom: 15px;
-  text-align: justify;
+  text-align: center;
+}
+
+.skills > .info > h5 {
+  text-align: left;
 }
 
 .devicons {
