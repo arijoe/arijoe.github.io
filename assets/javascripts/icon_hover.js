@@ -22,5 +22,6 @@
 })();
 
 $(document).on("ready", function () {
+  debugger
   $(".devicons").hoverIcon();
 })

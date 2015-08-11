@@ -75,6 +75,7 @@ button {
   height: 39px;
   color: #fff;
   border-bottom: 1px solid #17c1bd;
+  z-index: 2;
 }
 
 .top-bar:after {
@@ -83,6 +84,7 @@ button {
   background: #fff;
   padding-top: 6px;
   border-bottom: 1px solid #17c1bd;
+  z-index: 2;
 }
 
 .top-bar > .links {
@@ -140,7 +142,6 @@ button {
 
 .content {
   margin-top: 45px;
-  z-index: -1;
   width: 100%;
   position: relative;
   display: flex;
@@ -376,8 +377,10 @@ h5 {
 }
 
 .bullet {
-  color: #710101;
+  color: rgba(52, 52, 55, 1);
 }
+
+
 
 
 /* FOOTER */
