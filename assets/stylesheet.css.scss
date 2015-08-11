@@ -1,7 +1,8 @@
 /* RESET */
 
-html, body, div, ul, li, h1, h2, h4, h5,
-figure, img, button, a, footer, br {
+html, body, div, ul, li,
+h1, h2, h4, h5, h6, figure,
+img, button, a, footer, br {
   margin: 0;
   padding: 0;
   border: 0;
@@ -23,16 +24,22 @@ body {
   margin: 0;
   font-family: sans-serif;
   font-size: 16px;
+  color: rgba(52, 52, 55, 1);
   font-weight: 200;
   min-width: 780px;
 }
 
-ul {
-  list-style: none;
-}
-
 a {
   cursor: pointer;
+  color: #17c1bd;
+}
+
+a:hover {
+  color: #710101;
+}
+
+a:active {
+  color: #17c1bd;
 }
 
 img {
@@ -59,6 +66,7 @@ button {
 /* TOP BAR */
 .top-bar {
   display: block;
+  position: relative;
   background: #710101;
   height: 46px;
   color: #fff;
@@ -80,19 +88,24 @@ button {
   float: left;
   padding: 11px 15px 8px 15px;
   font: 18px;
-  font-weight: 400;
+  font-weight: 200;
   letter-spacing: 5px;
 }
 
-.links > li:last-child {
+.links > li:last-child > a {
   color: #ffffdf;
+  font-weight: 400;
 }
 
-.links > li:hover {
+.links > li > a {
+  color: #fff;
+}
+
+.links > li > a:hover {
   color: #17c1bd;
 }
 
-.links > li:active {
+.links > li > a:active {
   color: #ccc;
 }
 
@@ -111,8 +124,8 @@ button {
 }
 
 .logo > img {
-  margin-top: 4px;
-  margin-left: 0.37px;
+  margin-top: 3.9px;
+  margin-left: 0.23px;
 }
 
 /* *MAIN PAGE* */
@@ -127,7 +140,7 @@ button {
   float: left;
   display: inline-block;
   vertical-align: top;
-  transition: width .5s;
+  transition: width .4s;
 }
 
 .main {
@@ -275,7 +288,6 @@ h5 {
   display: block;
   margin-top: calc(2.5%);
   margin-bottom: 0px;
-  color: rgba(52, 52, 55, 1);
   text-align: justify;
 }
 
@@ -301,6 +313,11 @@ h5 {
 
 /* SKILLS */
 
+.skills > .info > p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
 .devicons {
   position: relative;
   left: 50%;
@@ -308,13 +325,16 @@ h5 {
   width: inherit;
 }
 
+.skills > .info {
+  text-align: center;
+}
+
 .skill {
-  display: inline;
+  display: inline-block;
 	width: 100px;
 	margin: 15px 20px;
   position: relative;
 	color: #17c1bd;
-  float: left;
 }
 
 .skill i {
@@ -329,10 +349,21 @@ h5 {
 }
 
 .skill > p {
-  color: #710101;
   text-align: center;
   margin: 10px 0;
 }
+
+/* PORTFOLIO */
+
+.projects {
+  display: block;
+  margin: 20px 0;
+}
+
+.bullet {
+  color: #710101;
+}
+
 
 /* FOOTER */
 
@@ -341,20 +372,20 @@ footer {
   display: block;
   position: relative;
   background: #fff;
-  color: rgba(52, 52, 55, 1);
+  color: #555;
 }
 
 footer > span {
-  margin-top: 30px;
+  margin-top: 60px;
   margin-bottom: 30px;
   font-style: italic;
 }
 
-#photo-credit {
+#credit {
   text-align: left;
   margin-left: 10px;
   float: left;
-  width: 20%;
+  width: 28%;
 }
 
 #ip {
@@ -362,4 +393,5 @@ footer > span {
   margin-right: 10px;
   float: right;
   width: 70%;
+  max-width: 500px;
 }
