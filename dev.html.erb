@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <head>
   <title>Ari Weitzman</title>
+  <meta charset="utf-8" />
   <link href='./assets/stylesheet.css.scss' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" type="image/png" href="./assets/images/logo_2.png"/>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/89f2f44ba07ea3fff7e561c2142813b278c2d6c6/devicon.min.css">
 </head>
 
 <html>
@@ -10,7 +12,7 @@
 
     <div class="top-bar group">
       <figure class="logo">
-        <img src="./assets/images/logo_1.png">
+        <img title="AW" src="./assets/images/logo_1.png">
       </figure>
 
       <ul class="links">
@@ -28,7 +30,7 @@
         <figure class="avatar">
           <div class="dummy"></div>
           <div class="container">
-            <img src ="./assets/images/avatar_6.jpg">
+            <img title="photo by John Bruno" src ="./assets/images/avatar_6.jpg">
           </div>
         </figure>
         <div class="description">
@@ -46,16 +48,16 @@
           <div class="banner-text">
             <h2>ARI WEITZMAN</h2>
           </div>
-            <img src="./assets/images/banner_1.jpg">
+            <img title="US-89N, AZ, 01/2013" src="./assets/images/banner_1.jpg">
         </figure>
 
         <div class="about-me group">
           <div class="info">
-            <div class="words">
+
               <figure class="avatar">
                 <div class="dummy"></div>
                 <div class="container">
-                  <img src ="./assets/images/me_and_cal.jpg">
+                  <img title="My girl Cal and me" src ="./assets/images/me_and_cal.jpg">
                 </div>
               </figure>
               <h5>$ whoami</h5>
@@ -65,13 +67,11 @@
                 I have always been interested in the way information is represented and explained,
                 especially through numbers and words. Communicating ideas through these base languages
                 have always been skills I've sought to hone, and the added challenge of presenting these
-                ideas through a computer-intermediary is such a sustained and enjoyble challenge.<br><br>
-                Please, check out my skills and projects to see what I can do! If you're interested
+                ideas through a computer-intermediary is such a sustained and enjoyable challenge.<br><br>
+                Check out my skills and projects to see what I can do! If you're interested
                 in learning more about me, click on "resume" to download my resume or the "connect" link
-                to see my other interests and find out how to get in touch!<br><br>
+                to see my other interests and find out how to get in touch!
               </p>
-            </div>
-
           </div>
         </div>
 
@@ -79,20 +79,40 @@
 
           <div class="info">
             <h5>$ ls skills</h5>
+            <p></p>
 
-            <ul class="devicons">
-              <li>Ruby</li>
-              <li>Ruby on Rails</li>
-              <li>SQL</li>
-              <li>Postgres</li>
-              <li>JavaScript</li>
-              <li>jQuery</li>
-              <li>Backbone</li>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>RSpec</li>
-              <li>Git</li>
-            </ul>
+            <ul class="devicons group">
+							<li class="skill container"><i class="devicon-ruby-plain"></i>
+							<p>Ruby</p></li>
+
+							<li class="skill container"><i class="devicon-rails-plain"></i>
+							<p>Rails</p></li>
+
+							<li class="skill container"><i class="devicon-javascript-plain"></i>
+							<p>JavaScript</p></li>
+
+              <li class="skill container"><i class="devicon-jquery-plain"></i>
+							<p>jQuery</p></li>
+
+							<li class="skill container"><i class="devicon-backbonejs-plain"></i>
+							<p>Backbone.js</p></li>
+
+							<li class="skill container"><i class="devicon-html5-plain"></i>
+							<p>HTML5</p></li>
+
+							<li class="skill container"><i class="devicon-css3-plain"></i>
+							<p>CSS 3</p></li>
+
+							<li class="skill container"><i class="devicon-postgresql-plain"></i>
+							<p>PostgreSQL</p></li>
+
+							<li class="skill container"><i class="devicon-git-plain"></i>
+							<p>Git</p></li>
+
+              <li class="skill container"><i class="devicon-amazonwebservices-original"></i>
+              <p>AWS</p></li>
+						</ul>
+
           </div>
         </div>
 
@@ -119,5 +139,6 @@
 
     <script src="./assets/javascripts/jquery.js"></script>
     <script src="./assets/javascripts/connect.js"></script>
+    <script src="./assets/javascripts/icon_hover.js"></script>
   </body>
 </html>

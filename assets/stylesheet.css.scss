@@ -58,7 +58,7 @@ button {
 
 /* TOP BAR */
 .top-bar {
-  position: relative;
+  display: block;
   background: #710101;
   height: 46px;
   color: #fff;
@@ -165,7 +165,7 @@ button {
   position: absolute;
   z-index: 2;
   top: calc(50% - 42px);
-  left: calc(50% - 242px);
+  left: calc(50% - 244px);
   color: rgba(255, 255, 223, 0.68);
   font-weight: 500;
 }
@@ -243,6 +243,7 @@ button {
   position: relative;
   border-bottom: 5px solid #fff;
   border-top: 1px solid #17c1bd;
+  margin: 0;
 }
 
 .main > div:after {
@@ -270,31 +271,19 @@ h5 {
 
 /* ABOUT ME */
 
-.words {
-  margin-right: 30px;
-}
-
-.words > p {
+.info > p {
   display: block;
   margin-top: calc(2.5%);
+  margin-bottom: 0px;
   color: rgba(52, 52, 55, 1);
   text-align: justify;
-}
-
-br {
-  display: block;
-  height: 16px;
-}
-
-br:after {
-  content: "";
 }
 
 .info {
   position: relative;
 }
 
-.words > .avatar {
+.info > .avatar {
   width: calc(20%);
   float: right;
   margin: 0 0 10px 30px;
@@ -302,12 +291,47 @@ br:after {
   box-shadow: 10px black;
 }
 
-.words > .avatar > .container >  img {
+.info > .avatar > .container >  img {
   position: relative;
   width: 215%;
   left: 50%;
   transform: translateX(-50%);
   top: -30px;
+}
+
+/* SKILLS */
+
+.devicons {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: inherit;
+}
+
+.skill {
+  display: inline;
+	width: 100px;
+	margin: 15px 20px;
+  position: relative;
+	color: #17c1bd;
+  float: left;
+}
+
+.skill i {
+	font-size: 100px;
+	display: block;
+	text-align: center;
+	transition: all .25s;
+}
+
+.skill i:hover {
+	transition: all .25s;
+}
+
+.skill > p {
+  color: #710101;
+  text-align: center;
+  margin: 10px 0;
 }
 
 /* FOOTER */
@@ -321,8 +345,8 @@ footer {
 }
 
 footer > span {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   font-style: italic;
 }
 
