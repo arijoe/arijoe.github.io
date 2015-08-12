@@ -14,6 +14,7 @@
   $.slideBar.prototype.connect = function () {
     $(".main").toggleClass("active");
     $(".sidebar").toggleClass("active");
+    $(".sidebar-info").toggleClass("active");
   };
 
   $.fn.sideBar = function () {

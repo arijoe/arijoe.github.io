@@ -23,7 +23,7 @@ html {
 body {
   margin: 0;
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: rgba(52, 52, 55, 1);
   font-weight: 200;
   min-width: 780px;
@@ -72,7 +72,7 @@ button {
   min-width: 780px;
   width: 100%;
   background: #710101;
-  height: 39px;
+  height: 41px;
   color: #fff;
   border-bottom: 1px solid #17c1bd;
   z-index: 2;
@@ -82,7 +82,7 @@ button {
   content: "";
   display: block;
   background: #fff;
-  padding-top: 6px;
+  padding-top: 5px;
   border-bottom: 1px solid #17c1bd;
   z-index: 2;
 }
@@ -162,7 +162,7 @@ button {
 .sidebar {
   width: 0;
   display: hidden;
-  background: rgba(52, 52, 55, 1);
+  background: rgba(84, 84, 90, 1);
   overflow: hidden;
 }
 
@@ -173,6 +173,11 @@ button {
 .sidebar.active {
   width: calc(30%);
   border-right: 1px solid #17c1bd;
+}
+
+.sidebar-info.active {
+  position: fixed;
+  width: calc(30%);
 }
 
 /* BANNER */
@@ -220,7 +225,7 @@ button {
   margin-top: 45px;
   margin-left: calc(10%);
   border-radius: 5px;
-  border: 1px solid #555;
+  border: 1px solid #444;
   overflow: hidden;
 }
 
@@ -256,9 +261,10 @@ button {
 .description > p {
   font-weight: 100;
   text-align: justify;
-  font-size: 18px;
-  margin: calc(10%);
-  color: #111;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 10px calc(10%);
+  color: #000;
 }
 
 /* MAIN */
@@ -308,7 +314,7 @@ h5 {
 }
 
 .info > .avatar {
-  width: calc(20%);
+  width: calc(25%);
   float: right;
   margin: 0 0 10px 30px;
   border: 1px solid #17c1bd;
@@ -397,6 +403,16 @@ padding-top: 70%;
 .project-description {
   width: 62%;
   margin-left: 15px;
+}
+
+.project-heading {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.project-description h6 {
+  margin: 15px 0;
+  font-size: 18px;
 }
 
 .bullet {
@@ -503,6 +519,7 @@ padding-top: 70%;
   position: relative;
   background: #fff;
   color: #555;
+  font-size: 14px;
 }
 
 .footer > span {
