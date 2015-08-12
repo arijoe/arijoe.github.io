@@ -585,7 +585,7 @@ padding-top: 70%;
   display: block;
   position: relative;
   background: #fff;
-  color: #bbb;
+  color: #aaa;
   font-size: 14px;
   padding-top: 90px;
   padding-bottom: 30px;
@@ -599,7 +599,7 @@ padding-top: 70%;
 }
 
 .footer a {
-  color: #aaa;
+  color: #888;
 }
 
 .footer a:hover {

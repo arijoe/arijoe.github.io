@@ -9,7 +9,7 @@
   };
 
   $.scrollFxn.prototype.calculate = function () {
-    this.scrollValues = [BAR_AND_BANNER_CLEARANCE];
+    this.scrollValues = [0, BAR_AND_BANNER_CLEARANCE];
     var that = this;
     var sv = this.scrollValues;
 
@@ -19,9 +19,10 @@
   }
 
   $.scrollFxn.prototype.initialize = function () {
-    $("#scroll-me").on("click", this.scrollToDiv.bind(this, 0));
-    $("#scroll-skills").on("click", this.scrollToDiv.bind(this, 1));
-    $("#scroll-portfolio").on("click", this.scrollToDiv.bind(this, 2));
+    $("#connect").on("click", this.scrollToDiv.bind(this, 0));
+    $("#scroll-me").on("click", this.scrollToDiv.bind(this, 1));
+    $("#scroll-skills").on("click", this.scrollToDiv.bind(this, 2));
+    $("#scroll-portfolio").on("click", this.scrollToDiv.bind(this, 3));
   };
 
   $.scrollFxn.prototype.scrollToDiv = function (idx) {
