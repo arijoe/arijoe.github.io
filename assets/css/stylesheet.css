@@ -1,6 +1,6 @@
 /* RESET */
 
-html, body, div, ul, li,
+html, body, div, ul, li, i,
 h1, h2, h3, h4, h5, h6, figure,
 img, button, a, footer, br {
   margin: 0;
@@ -32,10 +32,12 @@ body {
 a {
   cursor: pointer;
   color: #17c1bd;
+  transition: all .15s;
 }
 
 a:hover {
   color: #710101;
+  transition: all .15s;
 }
 
 a:active {
@@ -54,6 +56,12 @@ button {
   font-size: 14px;
   border-radius: 5px;
   margin: 0 auto;
+}
+
+.resume {
+  cursor: pointer;
+  color: #ffffdf;
+  transition: all .15s;
 }
 
 /* CLEARFIX */
@@ -96,7 +104,7 @@ button {
 
 .links > li {
   float: left;
-  padding: 0 15px;
+  padding: 0 13px;
   font: 18px;
   font-weight: 200;
   letter-spacing: 5px;
@@ -173,11 +181,13 @@ button {
 .sidebar.active {
   width: calc(30%);
   border-right: 1px solid #17c1bd;
+  position: relative;
 }
 
 .sidebar-info.active {
   position: fixed;
   width: calc(30%);
+  min-width: 234px;
 }
 
 /* BANNER */
@@ -222,7 +232,7 @@ button {
 .avatar {
   width: calc(80%);
   position: relative;
-  margin-top: 45px;
+  margin-top: 55px;
   margin-left: calc(10%);
   border-radius: 5px;
   border: 1px solid #444;
@@ -248,6 +258,7 @@ button {
 }
 
 .description {
+  position: relative;
   color: #ffffdf;
 }
 
@@ -265,6 +276,60 @@ button {
   line-height: 20px;
   margin: 10px calc(10%);
   color: #000;
+}
+
+.description p a {
+  color: #113;
+}
+
+.description p a:hover {
+  color: #11a;
+}
+
+.pro-icons {
+  margin: 20px 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: inherit;
+  text-align: center;
+}
+
+.pro-icon {
+  display: inline-block;
+	width: 32px;
+	margin: 0 10px;
+  position: relative;
+}
+
+.pro-icon i {
+	font-size: 32px;
+	display: block;
+	text-align: center;
+}
+
+.pro-icon a {
+  color: #17c1bd;
+}
+
+.pro-icon a:hover {
+	color: #159eb7;
+}
+
+.resume-view {
+  display: block;
+  position: relative;
+  margin: 30px calc(10%);
+}
+
+.resume-view i {
+  color: #17c1bd;
+  transition: all .15s;
+}
+
+.resume-view:hover i {
+  color: #159eb7;
+  transition: all .15s;
 }
 
 /* MAIN */
@@ -518,7 +583,7 @@ padding-top: 70%;
   display: block;
   position: relative;
   background: #fff;
-  color: #555;
+  color: #888;
   font-size: 14px;
 }
 
@@ -526,6 +591,14 @@ padding-top: 70%;
   margin-top: 60px;
   margin-bottom: 30px;
   font-style: italic;
+}
+
+.footer a {
+  color: #666;
+}
+
+.footer a:hover {
+  color: #333;
 }
 
 #credit {
