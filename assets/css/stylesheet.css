@@ -64,7 +64,7 @@ button {
   transition: all .15s;
 }
 
-/* CLEARFIX */
+/** CLEARFIX **/
 .group:after {
   content: "";
   display: block;
@@ -149,18 +149,16 @@ button {
 /* *MAIN PAGE* */
 
 .content {
-  margin-top: 45px;
+  top: 45px;
   width: 100%;
-  position: relative;
   display: flex;
-  overflow: hidden;
 }
 
 .content > div {
   float: left;
   display: inline-block;
   vertical-align: top;
-  transition: width .4s;
+  transition: all .4s;
 }
 
 .main {
@@ -182,11 +180,11 @@ button {
   width: calc(30%);
   border-right: 1px solid #17c1bd;
   position: relative;
+  top: 45px;
+  transition: all .4s;
 }
 
 .sidebar-info.active {
-  position: fixed;
-  width: calc(30%);
   min-width: 234px;
 }
 
@@ -228,6 +226,7 @@ button {
 }
 
 /* SIDEBAR */
+/** AVATAR **/
 
 .avatar {
   width: calc(80%);
@@ -257,15 +256,17 @@ button {
   top: -20px;
 }
 
+/*DESCRIPTION */
+
 .description {
   position: relative;
-  color: #ffffdf;
+  color: #000;
 }
 
 .description > h4 {
   text-align: center;
   font-size: 24px;
-  letter-spacing: 2.5px;
+  letter-spacing: 5px;
   margin-top: 15px;
 }
 
@@ -275,7 +276,6 @@ button {
   font-size: 16px;
   line-height: 20px;
   margin: 10px calc(10%);
-  color: #000;
 }
 
 .description p a {
@@ -340,6 +340,7 @@ button {
   border-bottom: 5px solid #fff;
   border-top: 1px solid #17c1bd;
   margin: 0;
+  background: #ffffdf;
 }
 
 .main > div:after {
@@ -352,7 +353,7 @@ button {
 }
 
 .main > div:nth-child(odd) {
-  background: #fff;
+  background: #fffff5;
 }
 
 h5 {
@@ -440,6 +441,7 @@ h5 {
 }
 
 /* PORTFOLIO */
+/** PROJECTS **/
 
 .projects {
   display: block;
@@ -484,7 +486,7 @@ padding-top: 70%;
   color: rgba(52, 52, 55, 1);
 }
 
-/* HOVER-EFFECT */
+/** HOVER-EFFECT **/
 
 .hovereffect {
   width: 100%;
@@ -583,35 +585,33 @@ padding-top: 70%;
   display: block;
   position: relative;
   background: #fff;
-  color: #888;
+  color: #bbb;
   font-size: 14px;
+  padding-top: 90px;
+  padding-bottom: 30px;
 }
 
 .footer > span {
-  margin-top: 60px;
-  margin-bottom: 30px;
+  margin: 0 30px;
   font-style: italic;
+  float: right;
+  text-align: left;
 }
 
 .footer a {
-  color: #666;
+  color: #aaa;
 }
 
 .footer a:hover {
-  color: #333;
-}
-
-#credit {
-  text-align: left;
-  margin-left: 10px;
-  float: left;
-  width: 28%;
+  color: #710101;
 }
 
 #ip {
+  margin: 0 15px 10px 0;
   text-align: right;
-  margin-right: 10px;
-  float: right;
-  width: 70%;
-  max-width: 500px;
+  max-width: 400px;
+}
+
+#credit {
+  float: left;
 }
