@@ -27,7 +27,12 @@
 
   $.scrollFxn.prototype.scrollToDiv = function (idx) {
     this.calculate();
-    this.$el.scrollTop(this.scrollValues[idx]);
+    var targetPos = this.scrollValues[idx];
+    var currentPos = this.$el.scrollTop();
+
+    this.$el.animate({
+      scrollTop: this.scrollValues[idx]
+    }, 250);
   };
 
   $.fn.scrollIt = function () {
