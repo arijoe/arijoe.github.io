@@ -451,6 +451,8 @@ h5 {
 .project {
   margin: 20px 0;
   text-align: left;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333;
 }
 
 .project > div {
@@ -473,8 +475,10 @@ padding-top: 70%;
 }
 
 .project-heading {
+  display: block;
   font-size: 24px;
   font-weight: 400;
+  border-bottom: 1px solid #ccc;
 }
 
 .project-description h6 {
@@ -482,8 +486,16 @@ padding-top: 70%;
   font-size: 18px;
 }
 
-.bullet {
+.description {
   color: rgba(52, 52, 55, 1);
+}
+
+.bullet {
+  margin: 5px 10px;
+}
+
+.bullet:before {
+  content: "⁍  ";
 }
 
 /** HOVER-EFFECT **/
