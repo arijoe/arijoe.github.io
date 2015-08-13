@@ -112,7 +112,7 @@ button {
 
 .links > li:last-child > a {
   color: #ffffdf;
-  font-weight: 400;
+  font-weight: bold;
 }
 
 .links > li > a {
@@ -150,15 +150,18 @@ button {
 
 .content {
   top: 45px;
-  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 
 .content > div {
-  float: left;
   display: inline-block;
   vertical-align: top;
   transition: all .25s;
+  float: left;
 }
 
 .main {
@@ -178,6 +181,7 @@ button {
 
 .sidebar.active {
   width: calc(30%);
+  flex: 1;
   border-right: 1px solid #17c1bd;
   position: relative;
   top: 45px;
@@ -494,8 +498,8 @@ h5 {
 }
 
 .project-description {
-  width: 62%;
-  margin-left: 15px;
+  width: 58%;
+  margin-left: 30px;
 }
 
 .project-heading {
