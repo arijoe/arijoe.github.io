@@ -505,9 +505,23 @@ h5 {
 
 .project-heading {
   display: block;
+  position: relative;
   font-size: 24px;
   font-weight: 400;
   border-bottom: 1px solid #ccc;
+  vertical-align: baseline;
+}
+
+.project-heading a:last-child {
+  position: relative;
+  font-size: 16px;
+  color: #555;
+  font-weight: bold;
+  margin-left: 12px;
+}
+
+.project-heading a:last-child:hover {
+  color: #710101;
 }
 
 .project-description h6 {
