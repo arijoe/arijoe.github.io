@@ -372,7 +372,6 @@ button {
   border-top: 1px solid #17c1bd;
   margin: 0;
   background: #ffffdf;
-  background: -webkit-linear-gradient(90deg, #ffffdf, #ffffdf 75%, #ededca);
 }
 
 .main > div:after {
