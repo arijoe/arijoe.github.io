@@ -17,7 +17,7 @@
       $(".main").addClass("active");
       $(".sidebar").addClass("active");
       $(".sidebar-info").addClass("active");
-    } else if (option && !this.$el.scrollTop() === 0) {
+    } else if (option && this.$el.scrollTop() !== 0) {
       return;
     } else {
       $(".main").toggleClass("active");
