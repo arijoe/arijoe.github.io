@@ -9,14 +9,15 @@
     $(".logo").on("click", this.connect.bind(this, false));
     $("#connect").on("click", this.connect.bind(this, true));
     $(".sidebar").find(".avatar").on("click", this.connect.bind(this, false));
+    $(".sidebar").find(".little-guy").on("click", this.connect.bind(this, false));
   };
 
   $.slideBar.prototype.connect = function (option) {
-    if (option && $(".sidebar").find(".active")[0] == null) {
+    if (option && $(".sidebar.active")[0] == null) {
       $(".main").addClass("active");
       $(".sidebar").addClass("active");
       $(".sidebar-info").addClass("active");
-    } else if (option && !this.$el.scrollTop() == 0) {
+    } else if (option && !this.$el.scrollTop() === 0) {
       return;
     } else {
       $(".main").toggleClass("active");

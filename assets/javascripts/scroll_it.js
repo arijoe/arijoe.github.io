@@ -1,5 +1,5 @@
 (function () {
-  var BAR_AND_BANNER_CLEARANCE = 346;
+  var BAR_AND_BANNER_CLEARANCE = 395;
 
   $.scrollFxn = function (el) {
     this.divs = ["#me", "#skills", "#portfolio"];

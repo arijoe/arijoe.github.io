@@ -22,7 +22,7 @@ html {
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Abel', sans-serif;
   font-size: 18px;
   color: rgba(52, 52, 55, 1);
   font-weight: 200;
@@ -80,7 +80,7 @@ button {
   min-width: 780px;
   width: 100%;
   background: #710101;
-  height: 41px;
+  height: 43px;
   color: #fff;
   border-bottom: 1px solid #17c1bd;
   z-index: 2;
@@ -158,7 +158,7 @@ button {
   float: left;
   display: inline-block;
   vertical-align: top;
-  transition: all .4s;
+  transition: all .25s;
 }
 
 .main {
@@ -181,16 +181,17 @@ button {
   border-right: 1px solid #17c1bd;
   position: relative;
   top: 45px;
-  transition: all .4s;
+  transition: all .25s;
 }
 
-.sidebar-info.active {
-  min-width: 234px;
+.sidebar p {
+  color: #000;
 }
 
 /* BANNER */
 
 .banner {
+  margin-top: 45px;
   display: block;
   position: relative;
   height: 400px;
@@ -203,9 +204,11 @@ button {
   position: absolute;
   z-index: 1;
   top: calc(50% - 42px);
-  left: calc(50% - 244px);
+  left: calc(50% - 240px);
   color: rgba(255, 255, 223, 0.68);
-  font-weight: 500;
+  font-weight: 400;
+  letter-spacing: 25px;
+  font-family: 'Elsie', display;
 }
 
 .banner-text > h2 {
@@ -330,6 +333,15 @@ button {
 .resume-view:hover i {
   color: #159eb7;
   transition: all .15s;
+}
+
+.little-guy {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  bottom: 55px;
+  left: calc(50% - 12px);
+  cusor: pointer;
 }
 
 /* MAIN */
