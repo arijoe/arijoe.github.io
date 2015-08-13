@@ -266,5 +266,12 @@
     <script src="./assets/javascripts/connect.js"></script>
     <script src="./assets/javascripts/icon_hover.js"></script>
     <script src="./assets/javascripts/scroll_it.js"></script>
+    <script>
+      $(window).scroll(function(){
+        $('.top-bar').css({
+            'left': $(this).scrollLeft() * -1
+        });
+      });
+    </script>
   </body>
 </html>
