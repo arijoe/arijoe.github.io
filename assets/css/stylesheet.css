@@ -416,6 +416,7 @@ h5 {
   margin: 0 0 10px 30px;
   border: 1px solid #17c1bd;
   box-shadow: 1px 1px 10px 1px #aaa;
+  max-width: 255px;
 }
 
 .info > .avatar > .container >  img {
