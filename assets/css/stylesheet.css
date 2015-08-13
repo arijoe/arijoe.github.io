@@ -80,6 +80,7 @@ button {
   min-width: 780px;
   width: 100%;
   background: #710101;
+  background: -webkit-linear-gradient(90deg, #520101, #710101 35%, #710101);
   height: 43px;
   color: #fff;
   border-bottom: 1px solid #17c1bd;
@@ -91,7 +92,7 @@ button {
   display: block;
   background: #fff;
   padding-top: 5px;
-  border-bottom: 1px solid #17c1bd;
+  border-bottom: 1px solid #710101;
   z-index: 2;
 }
 
@@ -250,6 +251,10 @@ button {
   overflow: hidden;
 }
 
+.sidebar .avatar {
+  box-shadow: 0 0 20px 2px #222;
+}
+
 .dummy {
   padding-top: 100%;
 }
@@ -278,8 +283,9 @@ button {
 .description > h4 {
   text-align: center;
   font-size: 24px;
-  letter-spacing: 5px;
+  letter-spacing: 11px;
   margin-top: 15px;
+  color: #333;
 }
 
 .description > p {
@@ -366,6 +372,7 @@ button {
   border-top: 1px solid #17c1bd;
   margin: 0;
   background: #ffffdf;
+  background: -webkit-linear-gradient(90deg, #ffffdf, #ffffdf 75%, #ededca);
 }
 
 .main > div:after {
@@ -409,6 +416,7 @@ h5 {
   float: right;
   margin: 0 0 10px 30px;
   border: 1px solid #17c1bd;
+  box-shadow: 1px 1px 10px 1px #aaa;
 }
 
 .info > .avatar > .container >  img {
