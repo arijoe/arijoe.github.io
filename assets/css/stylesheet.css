@@ -26,7 +26,7 @@ body {
   font-size: 18px;
   color: rgba(52, 52, 55, 1);
   font-weight: 200;
-  min-width: 780px;
+  min-width: 905px;
 }
 
 a {
@@ -77,7 +77,7 @@ button {
   position: fixed;
   top: 0;
   left: 0;
-  min-width: 780px;
+  min-width: 905px;
   width: 100%;
   background: #710101;
   background: -webkit-linear-gradient(90deg, #520101, #710101 35%, #710101);
@@ -167,26 +167,37 @@ button {
 }
 
 .main {
-  width: calc(100%);
+  margin-left: 0px;
+  margin-top: 50px;
+  width: 100%;
+  height: calc(100% - 50px);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .sidebar {
-  width: 0;
-  display: hidden;
+  position: fixed;
+  min-width: 271.5px;
+  top: 30px;
+  left: -300px;
+  height: 100%;
+  width: calc(30%);
+  background: #2f2f2f;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   background: rgba(84, 84, 90, 1);
-  overflow: hidden;
 }
 
 .main.active {
-  width: calc(70%);
+  margin-left: calc(30%);
+  transition: all .25s;
 }
 
 .sidebar.active {
-  width: calc(30%);
-  flex: 1;
+  left: 0px;
   border-right: 1px solid #17c1bd;
-  position: relative;
-  top: 45px;
   transition: all .25s;
 }
 
@@ -197,7 +208,6 @@ button {
 /* BANNER */
 
 .banner {
-  margin-top: 45px;
   display: block;
   position: relative;
   height: 400px;
@@ -242,17 +252,13 @@ button {
 /** AVATAR **/
 
 .avatar {
-  width: calc(80%);
+  width: calc(60%);
   position: relative;
-  margin-top: 55px;
-  margin-left: calc(10%);
+  margin-top: 60px;
+  margin-left: calc(20%);
   border-radius: 5px;
   border: 1px solid #444;
   overflow: hidden;
-}
-
-.sidebar .avatar {
-  box-shadow: 0 0 20px 2px #222;
 }
 
 .dummy {
@@ -283,7 +289,6 @@ button {
 .description > h4 {
   text-align: center;
   font-size: 24px;
-  letter-spacing: 11px;
   margin-top: 15px;
   color: #333;
 }
@@ -335,7 +340,7 @@ button {
 }
 
 .pro-icon a:hover {
-	color: #159eb7;
+  color: #159eb7;
 }
 
 .resume-view {
@@ -354,11 +359,15 @@ button {
   transition: all .15s;
 }
 
+.resume-view span {
+  margin-left: 10px;
+}
+
 .little-guy {
   height: 24px;
   width: 24px;
-  position: absolute;
-  bottom: 55px;
+  position: relative;
+  bottom: 0px;
   left: calc(50% - 12px);
   cursor: pointer;
 }
@@ -371,13 +380,12 @@ button {
   border-bottom: 5px solid #fff;
   border-top: 1px solid #17c1bd;
   margin: 0;
-  background: #ffffdf;
+  background: #fff;
 }
 
 .main > div:after {
   content: "";
   border-top: 1px solid #17c1bd;
-  padding-top: 5px;
   background: #fff;
   border-bottom: 1px solid #710101;
   display: block;
@@ -415,7 +423,6 @@ h5 {
   float: right;
   margin: 0 0 10px 30px;
   border: 1px solid #17c1bd;
-  box-shadow: 1px 1px 10px 1px #aaa;
   max-width: 255px;
 }
 
@@ -656,7 +663,7 @@ h5 {
   border-top: 1px solid #17c1bd;
   display: block;
   position: relative;
-  background: #fff;
+  background: #ffffef;
   color: #aaa;
   font-size: 14px;
   padding-top: 90px;
