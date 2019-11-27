@@ -1,5 +1,5 @@
 (function () {
-  var BAR_AND_BANNER_CLEARANCE = 395;
+  var BANNER_CLEARANCE = document.getElementById("banner").offsetHeight;
 
   $.scrollFxn = function (el) {
     this.divs = ["#me", "#skills", "#portfolio"];
@@ -9,12 +9,12 @@
   };
 
   $.scrollFxn.prototype.calculate = function () {
-    this.scrollValues = [0, BAR_AND_BANNER_CLEARANCE];
+    this.scrollValues = [0, BANNER_CLEARANCE];
     var that = this;
     var sv = this.scrollValues;
 
     this.divs.forEach(function(div) {
-      sv.push(sv[sv.length - 1] + that.$el.find(div)[0].scrollHeight);
+      sv.push(sv[sv.length - 1] + that.$el.find(div)[0].offsetHeight);
     });
   }
 
@@ -28,11 +28,11 @@
   $.scrollFxn.prototype.scrollToDiv = function (idx) {
     this.calculate();
     var targetPos = this.scrollValues[idx];
-    var currentPos = this.$el.scrollTop();
 
-    this.$el.animate({
-      scrollTop: this.scrollValues[idx]
-    }, 250);
+    window.scroll({
+      top: targetPos,
+      behavior: 'smooth'
+    });
   };
 
   $.fn.scrollIt = function () {
