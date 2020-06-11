@@ -40,6 +40,14 @@ a:hover {
   transition: all .15s;
 }
 
+a.no-link {
+    cursor: default;
+}
+
+a.no-ink:hover {
+    color: #17c1bd;
+}
+
 a:active {
   color: #17c1bd;
 }
